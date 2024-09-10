@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584125581314",
+    "project_id": "kadoshi-d30a3",
+    "storage_bucket": "kadoshi-d30a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584125581314:android:6a61592229c63419387f1b",
+        "android_client_info": {
+          "package_name": "com.example.charity_cat03"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJYBPNbr0UsPqzLrju0U8phtQorZnye6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
