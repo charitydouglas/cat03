@@ -1,48 +1,33 @@
-import 'package:flutter/material.dart';
-import 'screens/signin_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:firebase_core/firebase_core.dart'; // Import Firebase core for initialization
+import 'login_page.dart';
+import 'shoe_app.dart'; // Your shoe app entry point
+import 'signup_page.dart'; // Import the Sign Up page
+import 'reset_password_page.dart'; // Import the Reset Password page
+import 'firebase_options.dart'; // Import your Firebase options
 
-Future<void> main() async {
-  
-  runApp(const MyApp(
-    
-  ));
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform);
-  
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform); // Initialize Firebase
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner:false,
-      title: 'Level Six Lesson',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return CupertinoApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Shoe Store App',
+      theme: CupertinoThemeData(
+        primaryColor: CupertinoColors.activeBlue,
       ),
-      home: const SigninScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/shoeApp': (context) => ShoeApp(), // Your shoe app main page
+        '/signup': (context) => SignUpPage(), // Route for Sign Up page
+        '/resetPassword': (context) => ResetPasswordPage(), // Route for Reset Password page
+      },
     );
   }
 }

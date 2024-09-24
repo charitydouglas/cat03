@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDJYBPNbr0UsPqzLrju0U8phtQorZnye6I',
-    appId: '1:584125581314:android:6a61592229c63419387f1b',
+    appId: '1:584125581314:android:95756bcedb191ad3387f1b',
     messagingSenderId: '584125581314',
     projectId: 'kadoshi-d30a3',
     storageBucket: 'kadoshi-d30a3.appspot.com',
@@ -59,28 +59,29 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB4rC6L1fZhJxX_qqYs_AWLJATKIu9RlQE',
-    appId: '1:584125581314:ios:21eaba43a851b088387f1b',
+    appId: '1:584125581314:ios:2481ac9ae248e0d1387f1b',
     messagingSenderId: '584125581314',
     projectId: 'kadoshi-d30a3',
     storageBucket: 'kadoshi-d30a3.appspot.com',
-    iosBundleId: 'com.example.charityCat03',
+    iosBundleId: 'com.example.ohmsLogin',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyB4rC6L1fZhJxX_qqYs_AWLJATKIu9RlQE',
-    appId: '1:584125581314:ios:21eaba43a851b088387f1b',
+    appId: '1:584125581314:ios:2481ac9ae248e0d1387f1b',
     messagingSenderId: '584125581314',
     projectId: 'kadoshi-d30a3',
     storageBucket: 'kadoshi-d30a3.appspot.com',
-    iosBundleId: 'com.example.charityCat03',
+    iosBundleId: 'com.example.ohmsLogin',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyCkWj2AKB_YoDPf0-qtB0iNlDgx1JMugak',
-    appId: '1:584125581314:web:58a506c7f2627142387f1b',
+    appId: '1:584125581314:web:9e35cc57d9fb2a9b387f1b',
     messagingSenderId: '584125581314',
     projectId: 'kadoshi-d30a3',
     authDomain: 'kadoshi-d30a3.firebaseapp.com',
     storageBucket: 'kadoshi-d30a3.appspot.com',
   );
+
 }
